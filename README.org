@@ -1,3 +1,39 @@
-montessorImage application
+montessorImage
 
-*Documentation forthcoming*
+* Names
+
+  MontessorImage
+
+
+* Purposes
+
+  showing concentration, independence, joy, strength
+
+* Application
+
+** Files
+
+   - [ ] [[./config/routes.rb][Routes]]
+
+     : root 'static_pages#home'
+
+   - [ ] 
+
+** Static Pages
+
+  : rails g controller StaticPages home
+
+   - [ ] Home/Welcome
+
+   - [ ] About Anderson
+     
+   - [ ] Work/Examples/Photos
+     
+     - [ ] Photo
+     - [ ] Video
+       - [ ] Slide shows
+       - [ ] Pony Riding
+       - [ ] Misc
+     - [ ] Web
+
+   - [ ] Contact
