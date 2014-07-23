@@ -2,28 +2,102 @@ montessorImage
 
 * Names
 
-  MontessorImage
+  MontessorImage, MontessoriView
+
+  Concentration, observation, human tendencies, secret of childhood, hidden 
+  treasures, candid, not just joy, montessori media, education as an aid to life,
+  education from birth, work, joyful worker, toil play, work/play, the art of...,
+  
 
 
 * Purposes
 
   showing concentration, independence, joy, strength
 
+
 * Application
 
 ** Files
+
+*** Config
+
+   - [ ] [[./Gemfile][Gemfile]]
 
    - [ ] [[./config/routes.rb][Routes]]
 
      : root 'static_pages#home'
 
-   - [ ] 
+*** Assets
+
+   - [ ] [[./app/assets/images][Images]]
+
+   - [ ] [[./app/assets/stylesheets][Stylesheets]]
+
+     [[./app/assets/stylesheets/bootstrap_and_customization.css.scss][Bootstrap]]
+
+   - [ ] [[./app/assets/javascripts][JavaScripts]]
+
+     [[./app/assets/javascripts/application.js][application.js]]
+
+   - [ ] [[./app/views/layouts][Layouts]]
+
+     [[./app/views/layouts/application.html.erb][Application]]
+
+     [[./app/views/layouts/_header.html.erb][Header]]
+
+*** [[./app/controllers][Controllers]]
+
+    [[./app/controllers/static_pages_controller.rb][Static Pages]]
+
 
 ** Static Pages
 
   : rails g controller StaticPages home
 
-   - [ ] Home/Welcome
+   - [ ] [[./app/views/static_pages/home.html.erb][Home/Welcome]]
+
+     - [ ] Montessori quote/s
+
+       'We must help the child to act for himself, will for himself, think for 
+        himself; this is the art of those who aspire to serve the spirit.'
+        (Education for a New World, p. 69)
+
+       'The child's development follows a path of successive stages of 
+        independence, and our knowledge of this must guide us in our behaviour 
+        towards him. We have to help the child to act, will and think for 
+        himself. This is the art of serving the spirit, an art which can be 
+        practised to perfection only when working among children.' 
+        (The Absorbent Mind, p. 257)
+
+       'Independence is not a static condition; it is a continuous conquest, and 
+        in order to reach not only freedom, but also strength, and the 
+        perfection on one's powers, it is necessary to follow this path of 
+        unremitting toil.' 
+        (The Abosrbent Mind, Chapter 8, p. 91)
+
+       'The child seeks for independence by means of work; an independence of 
+        body and mind.' 
+        (The Abosrbent Mind, Chapter 8, p. 91)
+
+       'We must clearly understand that when we give the child freedom and 
+        independence, we are giving freedom to a worker already braced for 
+        action, who cannot live without working and being active.' 
+        (The Abosrbent Mind, Chapter 8, p. 91)
+
+       'Except when he has regressive tendencies, the child's nature is to aim 
+        directly and energetically at functional independence.' 
+        (The Absorbent Mind)
+
+       'The child can only develop fully by means of experience in his 
+        environment. We call such experience "work".' 
+        (The Absorbent Mind)
+
+       '
+
+     - [ ] Intro
+
+       Children...
+     
 
    - [ ] About Anderson
      

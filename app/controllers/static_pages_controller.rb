@@ -5,9 +5,12 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def work
+  def views
   end
 
   def contact
+  end
+
+  def pic
   end
 end

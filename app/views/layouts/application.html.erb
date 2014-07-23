@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MontessorImage</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>MontessorImage</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<%= yield %>
 
-</body>
+  </head>
+  <body>
+
+    <script>
+    </script>
+
+
+    <%= render 'layouts/header' %>
+
+    <div id="skrollr-body">
+      <%= yield %>
+    </div>
+
+    <script>
+
+     (function($){
+       skrollr.init({
+	 forceHeight: false,
+	 smoothScrolling: false
+       }).refresh();
+     } (jQuery));
+
+     var winWidth = $(window).width();
+     var winHeight = $(window).height();
+
+     $('.full').css({
+       'width': winWidth,
+       'height': winHeight,
+     });
+
+     $('.full-height').css({
+       'height': winHeight,
+     });
+     
+     $(window).resize(function(){
+       $('.full').css({
+	 'width': winWidth,
+	 'height': winHeight,
+       });
+
+       $('.full-height').css({
+	 'height': winHeight,
+       });
+
+     });
+
+     $(document).ready(function () {
+       $('#content').hide().fadeIn(3000);
+     });
+
+/*     $(window).load(function() {
+       $('#content').css({visibility: 'visible', opacity: 0}).fadeIn(1000);
+     });*/
+
+/*     $('#content').bind('load', function () { 
+       $(this).fadeIn(1000);
+     });*/
+
+
+    </script>
+
+  </body>
 </html>
